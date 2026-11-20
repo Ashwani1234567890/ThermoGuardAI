@@ -1,4 +1,4 @@
-# SHADOW THERMOGUARD AI
+# THERMOGUARD AI
 ### Decentralized Edge Intelligence for Real-Time Thermal Threat Detection
 
 SHADOW THERMOGUARD AI is an intelligent IoT-based thermal monitoring and threat detection system designed to identify abnormal temperature patterns, localized hotspots, gradual heating, rapid temperature rises, and sensor anomalies.
