@@ -1,0 +1,68 @@
+HYBRID MODEL - INDEPENDENT VALIDATION
+=======================================================
+Validation scenarios: 500
+Feature count: 16
+
+Class distribution:
+label
+gradual_heating    100
+hotspot            100
+normal             100
+rapid_rise         100
+sensor_anomaly     100
+
+
+=======================================================
+HYBRID RANDOM FOREST
+=======================================================
+
+Accuracy: 85.80%
+
+Classification Report:
+                 precision    recall  f1-score   support
+
+gradual_heating       0.68      0.96      0.80       100
+        hotspot       1.00      0.64      0.78       100
+         normal       0.98      0.98      0.98       100
+     rapid_rise       0.95      0.71      0.81       100
+ sensor_anomaly       0.83      1.00      0.91       100
+
+       accuracy                           0.86       500
+      macro avg       0.89      0.86      0.86       500
+   weighted avg       0.89      0.86      0.86       500
+
+
+Confusion Matrix:
+[[ 96   0   0   4   0]
+ [ 34  64   2   0   0]
+ [  2   0  98   0   0]
+ [  9   0   0  71  20]
+ [  0   0   0   0 100]]
+
+
+=======================================================
+HYBRID EXTRA TREES
+=======================================================
+
+Accuracy: 95.80%
+
+Classification Report:
+                 precision    recall  f1-score   support
+
+gradual_heating       0.83      1.00      0.91       100
+        hotspot       1.00      0.98      0.99       100
+         normal       0.99      0.94      0.96       100
+     rapid_rise       1.00      0.88      0.94       100
+ sensor_anomaly       1.00      0.99      0.99       100
+
+       accuracy                           0.96       500
+      macro avg       0.96      0.96      0.96       500
+   weighted avg       0.96      0.96      0.96       500
+
+
+Confusion Matrix:
+[[100   0   0   0   0]
+ [  1  98   1   0   0]
+ [  6   0  94   0   0]
+ [ 12   0   0  88   0]
+ [  1   0   0   0  99]]

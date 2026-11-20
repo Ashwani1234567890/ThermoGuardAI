@@ -1,0 +1,19 @@
+SKAB GRADIENT BOOSTING EVALUATION
+
+Training records: 1817
+Testing records: 455
+Accuracy: 0.2703
+
+              precision    recall  f1-score   support
+
+           0       1.00      0.03      0.06       342
+           1       0.25      1.00      0.41       113
+
+    accuracy                           0.27       455
+   macro avg       0.63      0.51      0.23       455
+weighted avg       0.81      0.27      0.14       455
+
+
+Confusion Matrix:
+[[ 10 332]
+ [  0 113]]

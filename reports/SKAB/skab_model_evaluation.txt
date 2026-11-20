@@ -1,0 +1,19 @@
+SKAB RANDOM FOREST EVALUATION
+
+Training records: 1817
+Testing records: 455
+Accuracy: 0.2593
+
+              precision    recall  f1-score   support
+
+         0.0       1.00      0.01      0.03       342
+         1.0       0.25      1.00      0.40       113
+
+    accuracy                           0.26       455
+   macro avg       0.63      0.51      0.22       455
+weighted avg       0.81      0.26      0.12       455
+
+
+Confusion Matrix:
+[[  5 337]
+ [  0 113]]

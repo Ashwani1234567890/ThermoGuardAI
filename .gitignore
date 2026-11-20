@@ -1,0 +1,37 @@
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# PlatformIO build files
+firmware/.pio/
+firmware/.cache/
+
+# Compiled executables and binaries
+*.exe
+*.bin
+*.elf
+*.o
+
+# IDE settings
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.log

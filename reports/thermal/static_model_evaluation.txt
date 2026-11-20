@@ -1,0 +1,37 @@
+THERMAL STATIC MODEL EVALUATION
+================================
+
+Dataset shape: (500, 18)
+Training scenarios: 400
+Testing scenarios: 100
+
+RANDOM FOREST
+Accuracy: 100.00%
+
+                 precision    recall  f1-score   support
+
+gradual_heating       1.00      1.00      1.00        20
+        hotspot       1.00      1.00      1.00        20
+         normal       1.00      1.00      1.00        20
+     rapid_rise       1.00      1.00      1.00        20
+ sensor_anomaly       1.00      1.00      1.00        20
+
+       accuracy                           1.00       100
+      macro avg       1.00      1.00      1.00       100
+   weighted avg       1.00      1.00      1.00       100
+
+
+EXTRA TREES
+Accuracy: 100.00%
+
+                 precision    recall  f1-score   support
+
+gradual_heating       1.00      1.00      1.00        20
+        hotspot       1.00      1.00      1.00        20
+         normal       1.00      1.00      1.00        20
+     rapid_rise       1.00      1.00      1.00        20
+ sensor_anomaly       1.00      1.00      1.00        20
+
+       accuracy                           1.00       100
+      macro avg       1.00      1.00      1.00       100
+   weighted avg       1.00      1.00      1.00       100

@@ -1,0 +1,110 @@
+
+SKAB DATASET - MODEL COMPARISON REPORT
+======================================
+
+PROJECT:
+Decentralized Thermal Threat Detection at the Edge
+
+DATASET:
+SKAB (Skoltech Anomaly Benchmark)
+
+DATASET SUMMARY:
+Total records: 2272
+Normal records: 1477
+Anomaly records: 795
+Sensor features: 8
+
+TESTING:
+Training records: 1817
+Testing records: 455
+
+--------------------------------------
+1. RANDOM FOREST
+--------------------------------------
+
+Accuracy: 25.93%
+
+Normal recall: 1%
+Anomaly recall: 100%
+Anomaly precision: 25%
+Anomaly F1-score: 0.40
+
+Confusion Matrix:
+[[5, 337],
+ [0, 113]]
+
+Observation:
+The model detected all test anomalies but
+incorrectly classified most normal records
+as anomalies.
+
+--------------------------------------
+2. ISOLATION FOREST
+--------------------------------------
+
+Default threshold:
+Accuracy: 32.97%
+Anomaly recall: 69%
+Anomaly precision: 22%
+
+Calibrated threshold:
+Accuracy: 73.19%
+Anomaly recall: 11%
+Anomaly precision: 36%
+Anomaly F1-score: 0.16
+
+Confusion Matrix:
+[[321, 21],
+ [101, 12]]
+
+Calibration:
+Normal calibration records: 228
+Threshold: 0.0876858685
+
+Observation:
+Calibration substantially reduced false
+positives but also reduced anomaly detection.
+The score distributions of normal and
+anomalous observations showed substantial overlap.
+
+--------------------------------------
+3. GRADIENT BOOSTING
+--------------------------------------
+
+Accuracy: 27.03%
+
+Normal recall: 3%
+Anomaly recall: 100%
+Anomaly precision: 25%
+Anomaly F1-score: 0.41
+
+Confusion Matrix:
+[[10, 332],
+ [0, 113]]
+
+Observation:
+The model detected all test anomalies but
+produced a very high number of false positives.
+
+--------------------------------------
+FINAL OBSERVATIONS
+--------------------------------------
+
+1. All three models were successfully trained.
+2. None is suitable for deployment in its
+   current configuration.
+3. Accuracy alone is insufficient for anomaly
+   detection evaluation.
+4. False negatives and false positives must
+   both be considered.
+5. SKAB sensor features differ from our
+   intended 16-channel NTC thermal sensor data.
+6. These experiments provide baseline
+   benchmarking, not direct transfer of
+   trained model weights to the thermal system.
+
+NEXT PHASE:
+Develop thermal-specific datasets and models
+for static and temporal thermal threat detection.
+
+END OF REPORT
