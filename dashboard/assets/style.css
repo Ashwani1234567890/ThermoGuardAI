@@ -1,0 +1,176 @@
+/* SHADOW THERMOGUARD AI - Industrial Dark Theme CSS */
+
+/* Main Page Styling */
+.stApp {
+    background-color: #0b0f19;
+    color: #e2e8f0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Sidebar Customization */
+section[data-testid="stSidebar"] {
+    background-color: #0d1322 !important;
+    border-right: 1px solid #1e293b;
+}
+
+/* Header & Title Accents */
+.main-title-container {
+    padding: 1.2rem 1.5rem;
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(30, 41, 59, 0.85));
+    border-radius: 12px;
+    border: 1px solid rgba(0, 240, 255, 0.25);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    margin-bottom: 1.5rem;
+}
+
+.main-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    background: linear-gradient(90deg, #00f0ff 0%, #3b82f6 50%, #60a5fa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+
+.main-subtitle {
+    font-size: 0.95rem;
+    color: #94a3b8;
+    margin-top: 0.35rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* Industrial KPI Metric Card */
+.kpi-card {
+    background: #111827;
+    border: 1px solid #1f2937;
+    border-radius: 10px;
+    padding: 1rem 1.25rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+    height: 100%;
+}
+
+.kpi-card:hover {
+    border-color: #38bdf8;
+    transform: translateY(-2px);
+}
+
+.kpi-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.4rem;
+}
+
+.kpi-value {
+    font-size: 1.85rem;
+    font-weight: 700;
+    color: #f8fafc;
+    line-height: 1.2;
+}
+
+.kpi-sub {
+    font-size: 0.8rem;
+    color: #64748b;
+    margin-top: 0.3rem;
+}
+
+/* Status Badges */
+.status-pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.pill-online {
+    background: rgba(16, 185, 129, 0.15);
+    color: #10b981;
+    border: 1px solid rgba(16, 185, 129, 0.4);
+}
+
+.pill-offline {
+    background: rgba(239, 68, 68, 0.15);
+    color: #ef4444;
+    border: 1px solid rgba(239, 68, 68, 0.4);
+}
+
+.pill-normal {
+    background: rgba(16, 185, 129, 0.15);
+    color: #10b981;
+    border: 1px solid rgba(16, 185, 129, 0.4);
+}
+
+.pill-warning {
+    background: rgba(245, 158, 11, 0.15);
+    color: #f59e0b;
+    border: 1px solid rgba(245, 158, 11, 0.4);
+}
+
+.pill-critical {
+    background: rgba(239, 68, 68, 0.15);
+    color: #ef4444;
+    border: 1px solid rgba(239, 68, 68, 0.4);
+}
+
+.pill-fault {
+    background: rgba(139, 92, 246, 0.15);
+    color: #8b5cf6;
+    border: 1px solid rgba(139, 92, 246, 0.4);
+}
+
+/* 4x4 Sensor Tile Grid */
+.sensor-cell-card {
+    background: #131b2e;
+    border: 1px solid #1e293b;
+    border-radius: 8px;
+    padding: 0.75rem 0.5rem;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease;
+}
+
+.sensor-cell-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(0, 240, 255, 0.15);
+}
+
+.sensor-id-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #94a3b8;
+    margin-bottom: 0.2rem;
+}
+
+.sensor-temp-display {
+    font-size: 1.35rem;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.sensor-adc-display {
+    font-size: 0.7rem;
+    color: #64748b;
+    margin-top: 0.25rem;
+}
+
+/* Table Enhancements */
+div[data-testid="stDataFrame"] {
+    background-color: #111827;
+    border-radius: 8px;
+    border: 1px solid #1f2937;
+}
+
+/* Divider Styling */
+hr {
+    border-color: #1e293b !important;
+}
