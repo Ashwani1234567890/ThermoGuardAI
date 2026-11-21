@@ -10,7 +10,7 @@ import time
 import streamlit as st
 from pathlib import Path
 
-from dashboard.config import config
+from config import config
 from dashboard.api_client import BackendAPIClient
 from dashboard.components import (
     render_sidebar,
