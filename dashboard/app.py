@@ -11,7 +11,7 @@ import streamlit as st
 from pathlib import Path
 
 from config import config
-from dashboard.api_client import BackendAPIClient
+from api_client import BackendAPIClient
 from dashboard.components import (
     render_sidebar,
     render_kpi_metrics,
