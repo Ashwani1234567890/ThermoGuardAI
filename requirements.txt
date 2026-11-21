@@ -10,3 +10,7 @@ ipykernel
 streamlit
 plotly
 pyserial
+pydantic
+fastapi
+sqlalchemy
+uvicorn
