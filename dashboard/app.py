@@ -1,5 +1,5 @@
 """
-SHADOW THERMOGUARD AI – Frontend Application
+THERMOGUARD AI – Frontend Application
 Decentralized Edge Intelligence for Real-Time Thermal Threat Detection
 
 Main Dashboard Overview. Connects strictly through existing backend REST APIs.
