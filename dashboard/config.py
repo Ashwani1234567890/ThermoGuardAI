@@ -10,7 +10,7 @@ from dataclasses import dataclass
 @dataclass(frozen=True)
 class DashboardConfig:
     # Application Branding
-    APP_NAME: str = "SHADOW THERMOGUARD AI"
+    APP_NAME: str = "THERMOGUARD AI"
     APP_SUBTITLE: str = "Decentralized Edge Intelligence for Real-Time Thermal Threat Detection"
     APP_VERSION: str = "2.0.0"
 
